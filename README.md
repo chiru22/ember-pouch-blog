@@ -13,6 +13,18 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+## Instructions
+Node Version: >v0.12.0 (!important)
+
+To Create Project:
+
+1.ember new offline
+2.cd offline
+3.brew install couchdb
+4.npm install -g add-cors-to-couchdb
+5.add-cors-to-couchdb (or) add-cors-to-couchdb http://localhost:5894 -u admin -p admin
+
+reference: https://teamgaslight.com/blog/offline-web-applications-with-couchdb-pouchdb-and-ember-cli
 ## Installation
 
 * `git clone <repository-url>` this repository
