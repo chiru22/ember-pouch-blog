@@ -1,11 +1,16 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-
+// app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+// module.exports = app.toTree();
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/moment/min/moment.min.js');
+  app.import(app.bowerDirectory + '/material-design-lite/material.css');
+  
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
