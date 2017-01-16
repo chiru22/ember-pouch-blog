@@ -10,6 +10,7 @@ module.exports = function(defaults) {
   app.import('bower_components/bootstrap/dist/css/bootstrap.css');
   app.import('bower_components/moment/min/moment.min.js');
   app.import(app.bowerDirectory + '/material-design-lite/material.css');
+  app.import('vendor/css/styles.css');
   
 
   // Use `app.import` to add additional libraries to the generated

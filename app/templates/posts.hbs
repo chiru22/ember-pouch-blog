@@ -1,9 +1,11 @@
-<div class="row-extra">  
-          <div class="col-md-4">
+<div class="mdl-grid mdl-cell mdl-cell--12-col"> 
+          <div class="mdl-cell mdl-cell--12-col">
                 <h1>Posts</h1>
+                <ul class='mdl-list'>
                 {{#each p in content}}
-                <br>{{#link-to 'posts.edit' p.id}} {{p.title}}{{/link-to}}
+                <li class="mdl-list__item">{{#link-to 'posts.edit' p.id}}<strong>{{p.title}}</strong>{{/link-to}}</li>
                 {{/each}}
+                </ul>
         </div>
                 {{outlet}}
 </div>  

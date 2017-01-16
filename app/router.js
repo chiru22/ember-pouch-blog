@@ -6,13 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.route("blog");
+	this.route("blog",{path: '/blog',resetNamespace: true});
 	this.resource("posts", function() {
-		this.route("edit",{
-			path: ":post_id"
-		});
+		this.route("edit",{path: "/edit/:post_id"});
 	});
-	this.route("new");
+	this.route("new",{path:"/new"});
 });
 
 // Router.map(function() {

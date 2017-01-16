@@ -1,12 +1,14 @@
-<div class="mdl-grid">
-{{#mdl-card title='Welcome to Ember.js'}}
-  <div class="mdl-card__supporting-text">
-    You have successfully installed <a href='https://github.com/truenorth/ember-material-lite' target='_blank'>ember-material-lite</a>. It's based on an awesome google project called <a href='https://github.com/google/material-design-lite' target='_blank'>Material Design Lite</a>
+<div class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+  <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    <h3>Blog</h3>
   </div>
-  {{#mdl-card-actions}}
-    {{mdl-button text='Test Button'}}
-  {{/mdl-card-actions}}
-{{/mdl-card}}
+  <div class="mdl-layout__tab-bar-container">
+    <div class="mdl-demo mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-js-ripple-effect--ignore-events">
+    {{#link-to "blog" class="mdl-demo mdl-layout__tab"}}Blog{{/link-to}}
+    {{#link-to "posts" class="mdl-demo mdl-layout__tab"}}Posts{{/link-to}}
+    {{#link-to "new" class="mdl-layout__tab"}}Add New{{/link-to}}
+    </div>
+  </div>
 </div>
 
 
