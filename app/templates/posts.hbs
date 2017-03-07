@@ -2,7 +2,7 @@
           <div class="mdl-cell mdl-cell--12-col">
                 <h1>Posts</h1>
                 <ul class='mdl-list'>
-                {{#each p in content}}
+                {{#each content as |p|}}
                 <li class="mdl-list__item">{{#link-to 'posts.edit' p.id}}<strong>{{p.title}}</strong>{{/link-to}}</li>
                 {{/each}}
                 </ul>

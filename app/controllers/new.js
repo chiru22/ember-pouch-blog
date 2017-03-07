@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({  
+export default Ember.Controller.extend({
+
 actions: {  
  save: function() {
   var title = this.get('title');
@@ -14,6 +15,7 @@ actions: {
           date:date
 
   });
+  post.set('id',title);
   this.set('title','');
   this.set('description','');
   post.save();

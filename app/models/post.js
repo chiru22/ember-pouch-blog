@@ -11,6 +11,7 @@ export default Model.extend({
     title: attr('string'),
     description: attr('string'),
     author: attr('string'),
-    date: attr('date')
+    date: attr('date'),
+    details: belongsTo('details')
 
 });
